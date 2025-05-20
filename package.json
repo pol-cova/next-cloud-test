@@ -1,0 +1,8 @@
+{
+	"dependencies": {
+		"webdav": "^5.8.0"
+	},
+	"devDependencies": {
+		"@types/node": "^22.15.19"
+	}
+}
