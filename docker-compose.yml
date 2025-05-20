@@ -1,0 +1,16 @@
+version: '3.8'
+
+volumes:
+  nextcloud_data:
+
+services:
+  app:
+    image: nextcloud:apache 
+    container_name: nextcloud-test-instance
+    restart: unless-stopped 
+    ports:
+      - "8080:80" 
+    volumes:
+      - nextcloud_data:/var/www/html
+    environment:
+      - OVERWRITEPROTOCOL=http
